@@ -1,0 +1,19 @@
+{
+  "name": "pacdiv-io-snake",
+  "version": "1.0.0",
+  "description": "Serverless page of the Snake game",
+  "main": "index.js",
+  "scripts": {
+    "dev": "serverless offline"
+  },
+  "keywords": [],
+  "author": "Loïc JEAN-LAMBERT (@pacdiv)",
+  "license": "ISC",
+  "dependencies": {
+    "dynogels": "^8.0.0",
+    "serverless": "^1.13.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.14.0"
+  }
+}

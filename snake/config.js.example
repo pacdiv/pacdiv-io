@@ -1,0 +1,19 @@
+'use strict'
+
+/**
+ * @const ACCESS_KEY_ID
+ * @type {string}
+ */
+module.exports.ACCESS_KEY_ID = 'XXXXXXXXXXXXXXXXXXXX'
+
+/**
+ * @const SECRET_ACCESS_KEY
+ * @type {string}
+ */
+module.exports.SECRET_ACCESS_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+
+/**
+ * @const REGION
+ * @type {string}
+ */
+module.exports.REGION = 'xx-xxxxx-1'
