@@ -33,6 +33,12 @@ functions:
       - http:
           method: GET
           path: /games/snake/rank/{score}
+  getScoreboard:
+    handler: src/handler.getScoreboard
+    events:
+      - http:
+          method: GET
+          path: /games/snake/scoreboard
 
 plugins:
   - serverless-offline

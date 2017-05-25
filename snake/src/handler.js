@@ -40,6 +40,27 @@ module.exports.getRank = function (event, context, callback) {
   })
 }
 
+module.exports.getScoreboard = function (event, context, callback) {
+  const response = {
+    headers: { 'Content-Type': 'application/json' },
+    statusCode: 400
+  }
+  const query = scoreModel
+    .query('Snake')
+    .usingIndex('gameTitle-score-index')
+    .descending()
+    .limit(20)
+
+  query.exec((err, data) => {
+    if (!err) {
+      response.statusCode = 200
+      response.body = data.Items.map(item => item.attrs)
+    }
+
+    callback(null, response)
+  })
+}
+
 module.exports.postScore = function (event, context, callback) {
   const gameTitle = 'Snake'
   const { player, score } = JSON.parse(event.body)
