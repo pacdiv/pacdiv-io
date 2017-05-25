@@ -54,7 +54,7 @@ module.exports.getScoreboard = function (event, context, callback) {
   query.exec((err, data) => {
     if (!err) {
       response.statusCode = 200
-      response.body = data.Items.map(item => item.attrs)
+      response.body = JSON.stringify(data.Items.map(item => item.attrs))
     }
 
     callback(null, response)

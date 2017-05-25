@@ -1,6 +1,6 @@
 {
   "name": "pacdiv-io-snake",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Serverless page of the Snake game",
   "main": "index.js",
   "scripts": {
