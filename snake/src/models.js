@@ -6,17 +6,17 @@ const dynogels = require('./dynogels').default
 module.exports.Score = dynogels.define(process.env.SCOREBOARD_TABLE, {
   hashKey: 'id',
   timestamps: true,
-  rangeKey : 'score',
+  rangeKey : 'gameTitle',
   schema: {
     id: dynogels.types.uuid(),
+    gameTitle: Joi.string(),
     player: Joi.string(),
-    score: Joi.number(),
-    valid: Joi.boolean().default(true)
+    score: Joi.number()
   },
   indexes: [{
-    hashKey: 'score',
-    rangeKey: 'player',
-    name: 'ScoreIndex',
+    hashKey: 'gameTitle',
+    rangeKey: 'score',
+    name: 'gameTitle-score-index',
     type: 'global'
   }]
 })
