@@ -41,9 +41,10 @@ module.exports.getRank = function (event, context, callback) {
 }
 
 module.exports.postScore = function (event, context, callback) {
+  const gameTitle = 'Snake'
   const { player, score } = JSON.parse(event.body)
 
-  scoreModel.create({ player, score }, function (err, data) {
+  scoreModel.create({ gameTitle, player, score }, (err, data) => {
     if (err) {
       const response = { statusCode: 400 }
       callback(null, response)
