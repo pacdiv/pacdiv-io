@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "Loïc JEAN-LAMBERT (@pacdiv)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dynogels": "^8.0.0",
     "serverless": "^1.13.1"
