@@ -1,13 +1,8 @@
 'use strict'
 
-module.exports.hello = (event, context, callback) => {
-  const response = {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: 'Go Serverless v1.0! Your function executed successfully!',
-      input: event
-    })
-  }
+import awsServerlessExpress from 'aws-serverless-express'
+import app from './app/server'
 
-  callback(null, response)
-}
+const server = awsServerlessExpress.createServer(app)
+
+export const hello = (event, context) => awsServerlessExpress.proxy(server, event, context)

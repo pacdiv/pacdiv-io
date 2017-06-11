@@ -15,5 +15,9 @@
     "babel-preset-env": "^1.5.2",
     "serverless-offline": "^3.14.1",
     "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.0.2",
+    "express": "^4.15.3"
   }
 }
