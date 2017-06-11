@@ -14,7 +14,6 @@
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.5.2",
     "serverless-offline": "^3.14.1",
-    "webpack": "^2.6.1",
-    "webpack-node-externals": "^1.6.0"
+    "webpack": "^2.6.1"
   }
 }
