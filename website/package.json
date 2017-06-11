@@ -1,0 +1,16 @@
+{
+  "name": "pacdiv-io-website",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Loïc JEAN-LAMBERT (@pacdiv)",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-webpack": "^1.0.0-rc.4",
+    "webpack": "^2.6.1",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
